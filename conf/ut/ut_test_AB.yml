@@ -1,0 +1,5 @@
+port: "9600"
+admin: "admin"
+sadmin: "sec_admin"
+init_admin_password: "P@ssword123"
+admin_password: "root1234"

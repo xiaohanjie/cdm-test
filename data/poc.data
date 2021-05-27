@@ -1,0 +1,18 @@
+{
+  "new_user": "poc_user",
+    "new_user_passwd": "Huayun#123",
+    "new_user_email": "wangjing3@huayun.com",
+    "new_user_tel": "18016467472",
+
+  "项目名称": "poc",
+    "CPU(核)": "1000",
+    "内存(GB)": "1000",
+    "存储(GB)": "1000",
+    "网络IP(个)": "100",
+    "浮动IP(个)": "100",
+
+	"镜像名称": "CentOS 7.5 64-bit 20GB",
+	"密码": "Welcome1",
+	"快照名称": "vmsnap"
+
+}

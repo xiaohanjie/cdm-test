@@ -1,0 +1,20 @@
+{
+	"testsuite":[
+		{
+			"name": "ut",
+			"testcases":[
+				{"tc_name": "tc_sd_pass1","script": "ut.ut_test", "testcase": "tc_pass"},
+				{"tc_name": "tc_sd_pwd1","script": "ut.ut_test", "testcase": "tc_pwd", "dependency": "tc_sd_pass1"},
+				{"tc_name": "tc_sd_fail1","script": "ut.ut_test", "testcase": "tc_fail", "dependency": "tc_sd_pwd1"},
+				{"tc_name": "tc_sd_pass2","script": "ut.ut_test", "testcase": "tc_pass", "dependency": "tc_sd_fail1"},
+				{"tc_name": "tc_md_pass1","script": "ut.ut_test", "testcase": "tc_pass"},
+				{"tc_name": "tc_md_pwd1","script": "ut.ut_test", "testcase": "tc_pwd"},
+				{"tc_name": "tc_md_fail1","script": "ut.ut_test", "testcase": "tc_fail"}, 
+				{"tc_name": "tc_md_pwd2","script": "ut.ut_test", "testcase": "tc_pwd", "dependency": "tc_md_pass1,tc_md_pwd1"},
+				{"tc_name": "tc_md_pass2","script": "ut.ut_test", "testcase": "tc_pwd", "dependency": "tc_md_pass1,tc_md_pwd1,tc_md_fail1"},
+                                {"tc_name": "tc_sd_para1","script": "ut.ut_test", "testcase": "tc_one_parameter", "tc_parameter": "testki11"},
+                                {"tc_name": "tc_sd_cdmtest1","script": "ut.ut_test", "testcase": "tc_cdm_userinit"}
+			]
+		}
+	]
+}

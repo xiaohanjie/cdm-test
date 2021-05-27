@@ -1,0 +1,31 @@
+{
+  "create_user": "automationuser",
+    "create_user_passwd": "Huayun#123",
+    "create_user_email": "qinzhigang@huayun.com",
+    "create_user_tel": "18101893525",
+
+  "项目名称": "autoproj",
+    "CPU(核)": "1000",
+    "内存(GB)": "1000",
+    "存储(GB)": "1000",
+    "网络IP(个)": "100",
+    "浮动IP(个)": "100",
+
+
+   "云硬盘名称": "sanity_disk",
+    "云硬盘容量": "10",
+    "云硬盘快照名称": "cdsnap1",
+
+
+   "云主机名称": "sanity_vm",
+	"镜像名称": "CentOS 7.5 64-bit 20GB",
+	"密码": "Welcome1",
+	"云主机快照名称": "vmsnap1",
+	"**密钥对": "",
+	"**网络类型": "外部网络",
+	"**网络名称": "",
+	"**子网名称": "",
+	"**防火墙": ""
+
+
+}

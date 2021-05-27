@@ -1,0 +1,36 @@
+testsuite: 
+- name: ut
+  testcases:  
+  - tc_name: tc_sd_pass1
+    script: ut.ut_test
+    testcase: tc_pass
+  - tc_name: tc_sd_pwd1
+    script: ut.ut_test
+    testcase: tc_pwd
+    dependency: tc_sd_pass1
+  - tc_name: tc_sd_fail1
+    script: ut.ut_test
+    testcase: tc_fail
+    dependency: tc_sd_pwd1
+  - tc_name: tc_sd_pass2
+    script: ut.ut_test
+    testcase: tc_pass
+    dependency: tc_sd_fail1
+  - tc_name: tc_cdm_add_backup_transip
+    script: ut.ut_test
+    testcase: tc_cdm_add_backup_transip
+  - tc_name: tc_cdm_add_nautilus_dataip
+    script: ut.ut_test
+    testcase: tc_cdm_add_nautilus_dataip
+  - tc_name: tc_cdm_add_nautilus_transip
+    script: ut.ut_test
+    testcase: tc_cdm_add_nautilus_transip
+  - tc_name: tc_cdm_remove_backup_transip
+    script: ut.ut_test
+    testcase: tc_cdm_remove_backup_transip
+  - tc_name: tc_cdm_remove_nautilus_dataip
+    script: ut.ut_test
+    testcase: tc_cdm_remove_nautilus_dataip
+  - tc_name: tc_cdm_remove_nautilus_transip
+    script: ut.ut_test
+    testcase: tc_cdm_remove_nautilus_transip
